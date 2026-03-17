@@ -23,6 +23,12 @@ export const metadata: Metadata = {
     type: "website",
   },
   manifest: "/manifest.json",
+  alternates: {
+    types: {
+      "application/rss+xml": [{ title: "OTTO Journal", url: "/rss.xml" }],
+      "application/atom+xml": [{ title: "OTTO Journal Atom Feed", url: "/rss.xml" }],
+    },
+  },
 };
 
 export default function RootLayout({
